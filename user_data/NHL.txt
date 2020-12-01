@@ -1,0 +1,11 @@
+SPORT=HOCKEY
+# Modify this document to change the team/game data used by the prediction program
+# Use the "#" symbol at the beggining of a line to write comments
+
+--TEAMS--
+"Boston Bruins" 1
+"Washington Capitals" 2
+
+--GAMES--
+# Write information here to add game data using the following format: WinnerID# LoserID# WinnerScore LoserScore
+1 2 3 4
