@@ -130,7 +130,7 @@ def teamRetrieval():  # gets team data
     global team1
     global team2
 
-    connection = sqlite3.connect('myData.db')
+    connection = sqlite3.connect("myData.db")
     connection.row_factory = lambda cursor, row: row[0]
     crsr = connection.cursor()
 
@@ -279,10 +279,10 @@ def readCsvFile(fileName, database, mode):  # writes to the database from a CSV 
         engine = create_engine("sqlite:///" + database, echo=False)
         connection = engine.connect()
 
-        mainData.to_sql("GAMES", connection, if_exists='append', index_label='GameID')
+        mainData.to_sql("GAMES", connection, if_exists="append", index_label="GameID")
 
         try:  # inserts data into the database
-            data.to_sql(sportName, connection, if_exists='append', index_label='GameID')
+            data.to_sql(sportName, connection, if_exists="append", index_label="GameID")
         except:
             pass
 
