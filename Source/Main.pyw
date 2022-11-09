@@ -4,6 +4,7 @@ import time
 import csv
 import ntpath
 import os
+import re
 import sqlite3
 import pandas as pd
 import tkinter as tk
